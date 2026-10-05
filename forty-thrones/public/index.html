@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forty Thrones</title>
+  <meta name="description" content="An eternal board of 40 thrones. Take one by paying at least 10% more than the last price. Your name stays in its history forever.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/" aria-label="Forty Thrones home">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M3 18 4.5 7l4.5 5 3-7 3 7 4.5-5L21 18z" fill="currentColor"/><rect x="3" y="19.5" width="18" height="2" rx="1" fill="currentColor"/></svg>
+      <span>Forty Thrones</span>
+    </a>
+    <nav class="acct" id="acct"></nav>
+  </header>
+
+  <main>
+    <section class="board" id="board" aria-label="The board of 40 thrones">
+      <div class="center" id="center">
+        <h1>Forty thrones.<br>Take one.</h1>
+        <p class="lede">Pay at least 10% more than the last price to put your image on a throne. Whoever held it before loses it, and their name and payment stay in its history forever.</p>
+        <div class="tabs" role="tablist" id="rankTabs"></div>
+        <ol class="ranklist" id="rankList" aria-live="polite"></ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <a href="/terms">Terms</a>
+    <a href="/privacy">Privacy</a>
+    <span>Payments are not refundable. You must be 18 or older.</span>
+  </footer>
+
+  <dialog id="dlg" aria-labelledby="dlgTitle"></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

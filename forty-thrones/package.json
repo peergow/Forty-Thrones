@@ -1,0 +1,27 @@
+{
+  "name": "forty-thrones",
+  "version": "0.1.0",
+  "description": "Forty Thrones: an eternal global board of 40 tiles. Seize a throne by paying at least 10% more than the last price.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.1",
+    "google-auth-library": "^9.14.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.4.0",
+    "nodemailer": "^10.0.14",
+    "sharp": "^0.35.5"
+  }
+}
